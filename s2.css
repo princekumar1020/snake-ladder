@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 2px;
+    border: 2px solid #000;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.snake {
+    background-color: #ff6347;
+}
+
+.ladder {
+    background-color: #90ee90;
+}
+
+#dice {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#dice p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#players {
+    display: flex;
+    justify-content: center;
+}
+
+#players p {
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
